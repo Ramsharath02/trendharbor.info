@@ -7,7 +7,6 @@ import AboutSection from "@/components/AboutSection";
 import FeaturedTrends from "@/components/FeaturedTrends";
 import CategoriesSection from "@/components/CategoriesSection";
 import NewsletterSection from "@/components/NewsletterSection";
-import Footer from "@/components/Footer";
 
 const Index = () => {
   // Animation controls for the loading sequence
@@ -49,9 +48,6 @@ const Index = () => {
         
         {/* Newsletter Section */}
         <NewsletterSection />
-        
-        {/* Footer */}
-        <Footer />
       </motion.div>
     </div>
   );
