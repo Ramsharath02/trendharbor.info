@@ -1,12 +1,58 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import FeaturedTrends from "@/components/FeaturedTrends";
+import CategoriesSection from "@/components/CategoriesSection";
+import NewsletterSection from "@/components/NewsletterSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Animation controls for the loading sequence
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const sequence = async () => {
+      await controls.start({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 1 }
+      });
+    };
+    
+    sequence();
+  }, [controls]);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      {/* Navigation */}
+      <Navigation />
+      
+      {/* Main Content */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={controls}
+      >
+        {/* Hero Section */}
+        <HeroSection />
+        
+        {/* About Section */}
+        <AboutSection />
+        
+        {/* Featured Trends Section */}
+        <FeaturedTrends />
+        
+        {/* Categories Section */}
+        <CategoriesSection />
+        
+        {/* Newsletter Section */}
+        <NewsletterSection />
+        
+        {/* Footer */}
+        <Footer />
+      </motion.div>
     </div>
   );
 };
