@@ -76,43 +76,7 @@ const NewsletterSection: React.FC = () => {
           </div>
         </motion.div>
         
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
-            <h3 className="text-xl font-bold mb-4 flex items-center">
-              <span className="text-gradient">Trend</span>
-              <span className="text-white">Harbor</span>
-            </h3>
-            <p className="text-white/60 mb-6">
-              The premier destination for trend forecasting and analysis across fashion, technology, 
-              lifestyle, and innovation sectors.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-white/60 hover:text-neon-blue transition-colors">Twitter</a>
-              <a href="#" className="text-white/60 hover:text-neon-blue transition-colors">LinkedIn</a>
-              <a href="#" className="text-white/60 hover:text-neon-blue transition-colors">Instagram</a>
-            </div>
-          </div>
-          
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Explore</h4>
-            <ul className="space-y-2">
-              <li><a href="#about" className="text-white/60 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#trends" className="text-white/60 hover:text-white transition-colors">Featured Trends</a></li>
-              <li><a href="#categories" className="text-white/60 hover:text-white transition-colors">Categories</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Research Services</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Resources</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Methodology</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Terms of Service</a></li>
-            </ul>
-          </div>
-        </div>
+       
         
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-white/40 text-sm">
           © {new Date().getFullYear()} TrendHarbor. All rights reserved.
