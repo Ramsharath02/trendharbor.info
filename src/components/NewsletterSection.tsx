@@ -20,7 +20,7 @@ const NewsletterSection: React.FC = () => {
       setLoading(false);
       toast({
         title: "Success!",
-        description: "You've been subscribed to our weekly trend reports.",
+        description: "You've been subscribed to our newsletter.",
       });
       setEmail("");
     }, 1000);
@@ -44,10 +44,10 @@ const NewsletterSection: React.FC = () => {
           
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Stay Ahead of the <span className="text-gradient">Curve</span>
+              Join Our <span className="text-gradient">Newsletter</span>
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto text-lg">
-              Subscribe to our weekly trend reports and never miss out on the latest innovations and emerging patterns across industries.
+              Subscribe to receive curated insights, exclusive content, and the latest updates delivered straight to your inbox every week.
             </p>
           </div>
           
@@ -72,11 +72,9 @@ const NewsletterSection: React.FC = () => {
           </form>
           
           <div className="mt-8 text-center text-white/50 text-sm">
-            By subscribing, you agree to receive TrendHarbor's emails and accept our Privacy Policy.
+            By subscribing, you agree to receive TrendHarbor's newsletter and accept our Privacy Policy.
           </div>
         </motion.div>
-        
-       
         
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-white/40 text-sm">
           © {new Date().getFullYear()} TrendHarbor. All rights reserved.

@@ -35,18 +35,18 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="text-white">Discover Tomorrow's </span>
-              <span className="text-gradient">Trends Today</span>
+              <span className="text-white">Insights Delivered to Your </span>
+              <span className="text-gradient">Inbox</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-2xl">
-              TrendHarbor curates the latest global trends in fashion, technology, lifestyle, and innovation.
+              TrendHarbor delivers curated newsletters on global trends in fashion, technology, lifestyle, and innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 className="bg-neon-blue hover:bg-neon-blue/80 text-white px-8 py-6 text-lg btn-neon-glow"
                 size="lg"
               >
-                Subscribe for Weekly Trend Reports
+                Subscribe to Our Newsletter
                 <ArrowRight className="ml-2" size={18} />
               </Button>
               <Button 
@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
                 className="border-white/30 hover:bg-white/10 text-white px-8 py-6 text-lg"
                 size="lg"
               >
-                Explore Trends
+                Browse Past Issues
               </Button>
             </div>
           </motion.div>

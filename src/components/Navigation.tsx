@@ -39,7 +39,7 @@ const Navigation: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {["Home", "About", "Trends", "Categories", "Contact"].map((item) => (
+          {["Home", "About", "Newsletters", "Categories", "Contact"].map((item) => (
             <a 
               key={item} 
               href={`#${item.toLowerCase()}`}
@@ -75,7 +75,7 @@ const Navigation: React.FC = () => {
           className="md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-lg border-t border-white/10"
         >
           <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
-            {["Home", "About", "Trends", "Categories", "Contact"].map((item) => (
+            {["Home", "About", "Newsletters", "Categories", "Contact"].map((item) => (
               <a 
                 key={item} 
                 href={`#${item.toLowerCase()}`}

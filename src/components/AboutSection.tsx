@@ -1,29 +1,29 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { TrendingUp, Info, Users, Building } from "lucide-react";
+import { MailOpen, BookOpenText, Send, Calendar } from "lucide-react";
 
 const AboutSection: React.FC = () => {
   const features = [
     {
-      icon: <TrendingUp className="h-8 w-8 text-neon-blue" />,
-      title: "Trend Forecasting",
-      description: "Advanced analytics and AI to predict emerging trends before they hit the mainstream.",
+      icon: <BookOpenText className="h-8 w-8 text-neon-blue" />,
+      title: "Curated Content",
+      description: "Carefully selected stories and insights delivered in an easy-to-digest format.",
     },
     {
-      icon: <Info className="h-8 w-8 text-neon-purple" />,
-      title: "Expert Insights",
-      description: "Deep dives from industry experts across fashion, technology, and lifestyle sectors.",
+      icon: <Calendar className="h-8 w-8 text-neon-purple" />,
+      title: "Weekly Delivery",
+      description: "Fresh perspectives and trends delivered to your inbox every week.",
     },
     {
-      icon: <Users className="h-8 w-8 text-neon-pink" />,
-      title: "Community Driven",
-      description: "Powered by a global community of trend spotters and cultural observers.",
+      icon: <MailOpen className="h-8 w-8 text-neon-pink" />,
+      title: "Reader-Focused",
+      description: "Content tailored to your interests with a clean, distraction-free reading experience.",
     },
     {
-      icon: <Building className="h-8 w-8 text-neon-orange" />,
-      title: "Industry Partnerships",
-      description: "Collaborations with leading brands to deliver exclusive trend insights.",
+      icon: <Send className="h-8 w-8 text-neon-orange" />,
+      title: "Easy Sharing",
+      description: "Seamlessly share your favorite articles across social platforms.",
     },
   ];
 
@@ -42,7 +42,7 @@ const AboutSection: React.FC = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-neon-blue to-neon-purple mx-auto mb-6"></div>
             <p className="text-white/70 max-w-3xl mx-auto text-lg">
-              We are at the forefront of trend forecasting, identifying and analyzing patterns across industries before they become mainstream. Our experts work tirelessly to provide you with the most accurate and insightful trend analysis.
+              We deliver thoughtfully curated newsletters that keep you informed about emerging trends and innovations. Our team of writers and editors work tirelessly to bring you the most relevant and engaging content.
             </p>
           </motion.div>
         </div>
@@ -77,28 +77,28 @@ const AboutSection: React.FC = () => {
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Our Mission</h3>
               <p className="text-white/70 mb-4">
-                At TrendHarbor, we're dedicated to providing our audience with cutting-edge insights into emerging global trends. We believe that understanding trends is key to innovation and staying ahead in today's fast-paced world.
+                At TrendHarbor, we're dedicated to delivering valuable, insightful content that keeps our readers informed and inspired. We believe that staying updated shouldn't be overwhelming or time-consuming.
               </p>
               <p className="text-white/70">
-                Our team of experts spans across continents, constantly monitoring and analyzing cultural shifts, technological advancements, and evolving consumer preferences to deliver the most relevant and timely trend insights.
+                Our talented team of writers and researchers work across different time zones to curate the most relevant stories and package them in a format that respects your time and attention.
               </p>
             </div>
             <div className="space-y-4">
               <div className="flex items-center">
                 <div className="h-1 w-10 bg-neon-blue mr-4"></div>
-                <span className="text-white font-medium">Global Coverage</span>
+                <span className="text-white font-medium">Thoughtful Curation</span>
               </div>
               <div className="flex items-center">
                 <div className="h-1 w-10 bg-neon-purple mr-4"></div>
-                <span className="text-white font-medium">Research-Backed Analysis</span>
+                <span className="text-white font-medium">Insightful Analysis</span>
               </div>
               <div className="flex items-center">
                 <div className="h-1 w-10 bg-neon-pink mr-4"></div>
-                <span className="text-white font-medium">Predictive Insights</span>
+                <span className="text-white font-medium">Reader-Centered Design</span>
               </div>
               <div className="flex items-center">
                 <div className="h-1 w-10 bg-neon-orange mr-4"></div>
-                <span className="text-white font-medium">Industry Expertise</span>
+                <span className="text-white font-medium">Consistent Delivery</span>
               </div>
             </div>
           </div>
